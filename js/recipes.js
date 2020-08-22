@@ -23,12 +23,12 @@ var recipeCard3 = {
   directions:['useing 1/2 of the buter saute the onions in a skilit untill translucent.','Transfer onion mixture to a large bowl. Add milk, eggs, bread crumbs, nutmeg, allspice, and salt and pepper to taste; stir to combine.','Mix beef and pork into the bread crumb mixture. Cover with plastic wrap and refrigerate for 1 hour.','Melt 2 tablespoons butter in a large skillet over medium heat; whisk flour into butter and cook until golden brown, 4 to 5 minutes. Slowly whisk beef broth into butter mixture.','Increase heat to medium-high, whisk cream into mixture and bring to a simmer. Stir mustard and Worcestershire sauce into gravy. Simmer until slightly thickened, 6 to 7 minutes. Season with salt and black pepper. Remove from heat and set aside.',' Preheat oven to 425 degrees F. Line a baking sheet with aluminum foil and lightly coat foil with cooking spray.','Roll 2 to 3 tablespoons meatball mixture into a ball using wet hands; repeat with remaining meatball mixture. Place meatballs on the prepared baking sheet.','Bake in the preheated oven until browned, about 20 minutes. A thermometer inserted into the center should read at least 160 degrees F.','Transfer meatballs to the gravy and cook over medium-low heat until warmed through, about 5 minutes.','Pull from heat, plate and enjoy!']
 };
 var recipeCard4 = {
-  dish:"",
-  servingSize: "",
-  time:"Prep:  | Cook: ",
+  dish:"slow cook Beef Stew",
+  servingSize: "6-8",
+  time:"Prep: 25Min | Cook: minimum 4.5 hours",
   source:" Matt Ravenmoore ",
-  ingredients:[],
-  directions:[]
+  ingredients:['2 Pounds cubed meat(chefs choice beef lamb venison all good options)','2 Quarts beef stock','1/2 cup butter','3/4 red onion, chopped','3 cloves Garlic, Minced','2 Leaves of Bay Leaf','1/2 Tbsp Salt','1/2 Tsp flour','3/4 Tsp white Pepper','1 sprig of Rosemerry','1/4 Tsp of oregano','2 Tbsp Butter','3 medium carrots, chopped','6 medium potatoes, quartered','2 stalks celery, chopped'],
+  directions:['Heat the butter in a large skillet over medium-high heat and saute the onions just to color them and then add the garlic for about 45 seconds remove from pan into crockpot instapot or other slow cooker','In the same pan sear off the meat untill evenly browned and add to slow cooker, discard any excess grease.','Add beef stock, seasonings including flour and stir','then add the potatoes, carrots, and celery','slow cook on a low to medium heat or until meat begins to tender, usualy 3 to 4.5 hours. the lower the heat the longer it will take but the better the flavors will be.']
 };
 var recipeCard5 = {
   dish:"Spinach and Strawberry Salad",
