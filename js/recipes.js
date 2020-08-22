@@ -39,12 +39,12 @@ var recipeCard5 = {
   directions:['In a large bowl, toss together the spinach and strawberries.','In a medium bowl, whisk together the oil, vinegar, sugar, paprika, and seeds.','Pour mixture over the spinach and strawberries, and toss to coat.','Serve and Enjoy!']
 };
 var recipeCard6 = {
-  dish:"",
-  servingSize: "",
-  time:"Prep:  | Cook: ",
+  dish:"Roast chicken and Mashed potatoes",
+  servingSize: "4-6",
+  time:"Prep: 20 min | Cook: 1hour 15 min ",
   source:" Matt Ravenmoore ",
-  ingredients:[],
-  directions:[]
+  ingredients:['1 whole chicken cleaned','2 1/2 Tbsp Smoked paprika','salt','pepper','1/2 yellow onion','1/2 cup pine nuts(or other nut)','1/4 cup dried fruit(cranberrys, raisins, apples are good options)in a 1/4 cup water','3 carrots','3 cloves of garlic minced seperated','7 Tbsp butter','pinch of thyme','1/2 a lemon','twine','2 pounds baking potatoes,peeled and quartered','1 cup cream'],
+  directions:['preheat oven to 375 F',' now start a skillet on med-high and just place the nuts in them with some salt','place 2 Tbsp of butter into the pan and add the onions to saute','add the dried fruit and water to the pan and let simmer off','drop in the 2 of the cloves of garlic just longenough to kiss the pan then remove mixture to a bowl to cool for 15 min','Coat the chicken in rest of the butter, then rub with salt and pepper, then the smoked paprika','stuff the chicken with the nut and fruit mix and tie the legs closed with the twine','place the carrots at the bottom of your roast pan and place the chicken breast up ontop of the carrots, then cover tightly with foil place lid over foil and slide into the oven for 1 hour','durring the last 30 min Bring a pot of salted water to a boil.','Add potatoes and cook until tender about 15 minutes; then drain.','return the potatoes to the pan add last of the butter,the cream, and last of the garlic and blend untill smooth','season mash with salt and pepper to taste','remove foil for last 20min of cooking to brown the chicken.','remove chicken from oven, let rest for 15 min, and serve']
 };
 var recipeCard7 = {
   dish:"",
