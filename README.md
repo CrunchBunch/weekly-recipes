@@ -1,8 +1,8 @@
-# weekly-recipes
+# Weekly-recipes
 
-## project
+## Weekly Meal Planner Project
 
-Description of scope of project
+building an app that will pick random recipies from your catalog of recipes and plans a week  meal and shopping list for you.
 
 ### Authors: 
 
@@ -25,3 +25,4 @@ whole group excited to start codeing.
 ### WorkNotes
 
 see trello for our document maps they are imgs.
+
