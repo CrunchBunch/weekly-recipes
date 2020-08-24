@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="csss/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meal Helper</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Meal Helper</h1>
+      <!-- user input feild should accept strings and compair aginst a stored list and either create a new user or access old user info(name so far) -->
+      <fieldset>
+        <form id="user-info">
+        <label for="name">User Name</label>
+          <input type="text" id="name" name="name">
+          <input type="submit" value="Submit"> 
+        </form>
+      </fieldset>
+    </header>
+    <main>
+      <section id="top">
+        <!-- Meal generator inputs takes in string of num of servings and checkbox for protien type and returns one random meal from recipes js -->
+        <article id="random-form">
+          <feildset>
+          <form id="">
+            <label for="servings">Number of servings</label>
+            <input type="text" id="servings" name="servings">
+           
+            <label for="meal-type1"> Meat</label>
+            <input type="checkbox" id="meal-type1" name="meal-type1" value="Meat">
+            <label for="meal-type2"> Vegitarian</label>
+            <input type="checkbox" id="meal-type2" name="meal-type2" value="Vegitarian">
+            <input type="submit" value="Submit">  
+          </form>            
+          </feildset>
+        </article>
+        <img src="../" alt="something" title="something"/> 
+      </section>
+      
+
+    </main>
+    <footer>
+      <section id="links">
+        <!-- links to about -->
+        <h2><a href="/pages/about-us.html" >About the Team</a>
+      </section>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/recipes.js"></script>
+  </body>
+</html>
