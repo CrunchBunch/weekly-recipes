@@ -108,4 +108,16 @@ Describe the flow of data in your application. Write out what happens from the t
 
 ![DomModeling](https://i.imgur.com/0lDVnkK.png?1)
 
-[Link for DOM modeling](https://www.figma.com/file/JKK8DNPqknj68D0nQOQCmL/Captain-KRUNCH-DOM?node-id=0%3A1);
+[Link for DOM modeling](https://www.figma.com/file/JKK8DNPqknj68D0nQOQCmL/Captain-KRUNCH-DOM?node-id=0%3A1)
+
+### Wireframes
+
+**Homepage**
+![HOMEPAGE](https://i.imgur.com/XaFfpuo.png) 
+
+**Meal Generator**
+![MealGenerator](https://i.imgur.com/NYRXPNN.png) 
+
+**About us**
+![About-Us](https://i.imgur.com/WRHE6Ln.png) 
+
