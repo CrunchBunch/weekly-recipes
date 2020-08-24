@@ -107,3 +107,5 @@ Describe the flow of data in your application. Write out what happens from the t
 ### Domain Modeling 
 
 ![DomModeling](https://i.imgur.com/0lDVnkK.png?1)
+
+[Link for DOM modeling](https://www.figma.com/file/JKK8DNPqknj68D0nQOQCmL/Captain-KRUNCH-DOM?node-id=0%3A1);
