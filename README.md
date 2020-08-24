@@ -106,4 +106,4 @@ Describe the flow of data in your application. Write out what happens from the t
 
 ### Domain Modeling 
 
-[Imgur](https://i.imgur.com/0lDVnkK.png?1)
+![DomModeling](https://i.imgur.com/0lDVnkK.png?1)
