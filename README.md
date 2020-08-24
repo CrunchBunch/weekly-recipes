@@ -103,3 +103,7 @@ List the functionality of your product. This will consist of tasks such as the f
 ### Data Flow
 
 Describe the flow of data in your application. Write out what happens from the time the user begins using the app to the time the user is done with the app. Think about the “Happy Path” of the application. Describe through visuals and text what requests are made, and what data is processed, in addition to any other details about how the user moves through the site.
+
+### Domain Modeling 
+
+[Imgur](https://i.imgur.com/0lDVnkK.png?1)
