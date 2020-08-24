@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="csss/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>About the Crunch Bunch</title>
   </head>
   <body>
     <header>
-
+      <h1>Meet The Crunch-Bunch!</h1>
+      <!-- user input feild should accept strings and compair aginst a stored list and either create a new user or access old user info(name so far) -->
+      <fieldset>
+        <form id="user-info">
+        <label for="name">User Name</label>
+          <input type="text" id="name" name="name">
+          <input type="submit" value="Submit"> 
+        </form>
+      </fieldset>
     </header>
     <main>
+      <section id="people">
+        <article class="crunch-bunch" id="matt">
+          <img href="../img/source" alt="Matt Ravenmoore" title="Matt Ravenmoore" />
+          <h2>Matt</h2>
+          <p>Story goes here</p>
+        </article>
+        <article class="crunch-bunch" id="andre">
+          <img href="../img/source" alt="Andre" title="Andre" />
+          <h2>Andre</h2>
+          <p>Story goes here</p>
+        </article>
+        <article class="crunch-bunch" id="michael">
+          <img href="../img/source" alt="michael" title="Michael" />
+          <h2>Michael</h2>
+          <p>Story goes here</p>
+        </article>
+        <article class="crunch-bunch" id="Czarl">
+          <img href="../img/source" alt="Czarl" title="Czarl" />
+          <h2>Czarl</h2>
+          <p>Story goes here</p>
+        </article>
+        <article class="crunch-bunch" id="James">
+          <img href="../img/source" alt="James" title="James" />
+          <h2>James</h2>
+          <p>Story goes here</p>
+        </article>
+      </section>
 
     </main>
-    <footer>
-
-    </footer>
-    <script src="js/app.js"></script>
-    <script src="js/recipes.js"></script>
+    <section id="links">
+      <!-- links to about -->
+      <h2><a href="../index.html" >Home</a>
+    </section>
+  </footer>
+    <script src="../js/app.js"></script>
+    <script src="../js/recipes.js"></script>
   </body>
 </html>
