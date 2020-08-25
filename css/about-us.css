@@ -1,7 +1,9 @@
 body {
   background-image: url("../img/Table.jpg");
   background-size: cover;
-
+  margin: 2% 10%;
+  color: rgb(29, 28, 28);
+  overflow: visible;
 }
 
 #crunch-bunch {
@@ -10,7 +12,90 @@ body {
   display: inline;
 }
 
-img {
-  height: 150px;
-  border-radius: 50%
+.crunch-bunch h2 {
+  font-weight: bolder;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
+
+article h1 {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 10%;
+  color: black;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+
+#first, #second, #third{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+}
+
+article {
+  margin: auto;
+  padding: 40px 40px;
+  margin-bottom: 40px;
+  background: url(https://i.imgur.com/pNdIQeG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 
+  inset 0 -3em 3em rgba(0,0,0,0.1), 
+  0 0  0 0px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+article:hover {
+  opacity: 1;
+}
+
+#people1 {
+  text-align: center;
+}
+
+#header {
+  background: none;
+  opacity: 1;
+  box-shadow: none;
+  padding-bottom: 100px;
+}
+
+.crunch-bunch img {
+  height: 150px;
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: 
+  inset 0 -5em 5em rgba(0,0,0,0.1), 
+  0 0  0 0px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+#links, #links a {
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.3em;
+}
+
+#links a:hover {
+  color: rgba(45, 45, 247, 0.89)
+}
+
