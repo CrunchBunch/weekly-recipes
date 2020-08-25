@@ -1,3 +1,55 @@
+
+//array of recipes
+var allrecipes = [];
+
+// constructor of recipe
+var Product = function(dish, isMeat, servingSize, time, source, ingredients, directions) {
+  this.dish = dish;
+  this.isMeat = isMeat
+  this.servingSize = servingSize;
+  this.time = time;
+  this.source = source;
+  this.ingredients = ingredients;
+  this.directions = directions;
+
+  allrecipes.push(this)
+};
+
+
+//object instance of recipes
+Product.prototype.AllRecipes = function(recipes) {
+  this.recipes = recipes;
+};
+
+Product.prototype.addInput = function(dish, servingSize, time, source, ingredients, directions) {
+
+  this.recipes.push(new FormInfo(servings,protein, name));
+
+}
+
+Product.prototype.saveToLocalStorage = function() {
+  this.recipes = allrecipes;
+  var stringRecipes = JSON.stringify(this.recipes)
+  localStorage.setItem('recipes', stringRecipes);
+  
+}
+
+function generateRecipes() {
+new Product(recipeCard1.dish, recipeCard1.isMeat, recipeCard1.servingSize, recipeCard1.time, recipeCard1.source, recipeCard1.ingredients, recipeCard1.directions);
+
+new Product(recipeCard2.dish, recipeCard2.isMeat,  recipeCard2.servingSize, recipeCard2.time, recipeCard3.source, recipeCard2.ingredients, recipeCard2.directions);
+
+new Product(recipeCard3.dish, recipeCard3.isMeat,  recipeCard3.servingSize, recipeCard3.time, recipeCard3.source, recipeCard3.ingredients, recipeCard3.directions);
+
+new Product(recipeCard4.dish, recipeCard4.isMeat,  recipeCard4.servingSize, recipeCard4.time, recipeCard4.source, recipeCard4.ingredients, recipeCard4.directions);
+
+new Product(recipeCard5.dish, recipeCard5.isMeat,  recipeCard5.servingSize, recipeCard5.time, recipeCard5.source, recipeCard5.ingredients, recipeCard5.directions);
+
+new Product(recipeCard6.dish, recipeCard6.isMeat,  recipeCard6.servingSize, recipeCard6.time, recipeCard6.source, recipeCard6.ingredients, recipeCard6.directions);
+
+new Product(recipeCard7.dish, recipeCard7.isMeat,  recipeCard7.servingSize, recipeCard7.time, recipeCard7.source, recipeCard7.ingredients, recipeCard7.directions);
+}
+
 var recipeCard1 = {
   dish:"Shepards Pie",
   isMeat : true,
@@ -88,3 +140,7 @@ var recipeCard10 = {
   ingredients:[],
   directions:[]
 };
+
+generateRecipes();
+Product.prototype.saveToLocalStorage();
+
