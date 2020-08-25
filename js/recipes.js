@@ -143,3 +143,4 @@ var recipeCard10 = {
 
 generateRecipes();
 Product.prototype.saveToLocalStorage();
+
