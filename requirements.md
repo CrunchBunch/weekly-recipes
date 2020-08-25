@@ -1,4 +1,4 @@
-# Sodftware requriements
+# Software requriements
 
 
 What is the vision of this product? 
