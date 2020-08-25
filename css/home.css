@@ -23,7 +23,7 @@ header h1{
 }
 
 #top{
-  border: 5px rgb(198, 194, 94) ridge;
+  border: 5px rgb(148, 145, 51) ridge;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@ header h1{
   position: relative;
   top: 25%;
   width: 50%;
-  background-color: rgba(114, 158, 10, 0.585);
+  background-color: rgba(202, 132, 28, 0.612);
 }
 
 #random-form{
@@ -48,5 +48,16 @@ header h1{
 footer{
   height: 75px;
   background-color: rgba(23, 100, 32, 0.756);
+}
+
+#links, #links a{
+  text-decoration-line: none;
+  text-align: right;
+  color: rgb(227, 136, 87)
+
+}
+
+#links a:hover{
+  color: black;
 }
 
