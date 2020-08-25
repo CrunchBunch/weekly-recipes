@@ -1,18 +1,52 @@
-body{
-  background-color: rgba(248, 211, 211, 0.907);
-  margin: 10px;
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-  padding: 10px;
+
+main{
+  height: 610px;
+  background-image: url('../img/home-img.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
 }
 
 header{
-  color: rgba(248, 211, 211, 0.907);
-  background-color: rgb(62, 6, 173);
+  color: rgb(227, 136, 87);
+  background-color: rgba(23, 100, 32, 0.756);
   padding: 10px;
+}
+
+header h1{
+  border-bottom: 8px black ridge;
 }
 
 #user-info{
   margin: 10px;
   margin-top: 30px;
+}
+
+#top{
+  border: 5px rgb(198, 194, 94) ridge;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 10px;
+  position: relative;
+  top: 25%;
+  width: 50%;
+  background-color: rgba(114, 158, 10, 0.585);
+}
+
+#random-form{
+  width: 600px;
+  float: left;
+}
+
+#img1{
+  float: right;
+  width: 150px;
+}
+
+footer{
+  height: 75px;
+  background-color: rgba(23, 100, 32, 0.756);
 }
 
