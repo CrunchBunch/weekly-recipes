@@ -1,0 +1,21 @@
+html{
+  width: auto;
+} 
+
+body{
+  background-color: brown;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+  background-color: rgb(247, 181, 199);
+}
+
+#user-info{
+  background-color: burlywood;
+}
+/* 
+form{
+
+} */
+
