@@ -1,5 +1,6 @@
 var recipeCard1 = {
   dish:"Shepards Pie",
+  isMeat : true,
   servingSize:"6",
   time:"Prep: 35 Min | Cook: 1 hour 15 Min | Total: 1 Hour 45 Min",
   source:"Matt Ravenmoore with credit to Gorden Ramsey for a base",
@@ -8,6 +9,7 @@ var recipeCard1 = {
 }
 var recipeCard2 = {
   dish:"Chicken Parmesan",
+  isMeat : true,
   servingSize: "4",
   time:"Prep: 25 Min | Cook: 20 Min | Total: 45 Min",
   source:"Matt Ravenmoore with credit to Gorden Ramsey for a base",
@@ -16,6 +18,7 @@ var recipeCard2 = {
 };
 var recipeCard3 = {
   dish:"Swedish Meatballs",
+  isMeat : true,
   servingSize: "4-6",
   time:"Prep: 1H 30min | Cook: 35min | Total 2 Hours",
   source:"All-recipes https://www.allrecipes.com/recipe/231169/chef-johns-swedish-meatballs/?internalSource=hub%20recipe&referringContentType=Search with tweeks by Matt Ravenmoore ",
@@ -24,6 +27,7 @@ var recipeCard3 = {
 };
 var recipeCard4 = {
   dish:"slow cook Beef Stew",
+  isMeat : true,
   servingSize: "6-8",
   time:"Prep: 25Min | Cook: minimum 4.5 hours | Total 5 Hours Minimum",
   source:" Matt Ravenmoore ",
@@ -32,6 +36,7 @@ var recipeCard4 = {
 };
 var recipeCard5 = {
   dish:"Spinach and Strawberry Salad",
+  isMeat : false,
   servingSize: "8",
   time:"Prep: 10 Mins | Cook: 10 Mins | Total 20 Min",
   source:"all recipes: https://www.allrecipes.com/recipe/16409/spinach-and-strawberry-salad/?internalSource=hub%20recipe&referringContentType=Search",
@@ -40,6 +45,7 @@ var recipeCard5 = {
 };
 var recipeCard6 = {
   dish:"Roast chicken and Mashed potatoes",
+  isMeat : true,
   servingSize: "4-6",
   time:"Prep: 20 Min | Cook: 1 Hour 10 Min | Total: 1 Hour 30 Min",
   source:" Matt Ravenmoore & Andre Olivier Martin ",
@@ -48,6 +54,7 @@ var recipeCard6 = {
 };
 var recipeCard7 = {
   dish:"",
+  isMeat : false,
   servingSize: "",
   time:"Prep:  | Cook: ",
   source:" Matt Ravenmoore ",
@@ -56,6 +63,7 @@ var recipeCard7 = {
 };
 var recipeCard8 = {
   dish:"Disney's Ratatouille",
+  isMeat : false,
   servingSize: "4",
   time:"Prep: 45 mins | Cook:45 mins | Total: 1 hr 30 mins",
   source:" All Recipes https://www.allrecipes.com/recipe/222006/disneys-ratatouille/ with adapttions from Matt Ravenmoore",
@@ -64,6 +72,7 @@ var recipeCard8 = {
 };
 var recipeCard9 = {
   dish:"",
+  isMeat : false,
   servingSize: "",
   time:"Prep:  | Cook: ",
   source:" Matt Ravenmoore ",
@@ -72,12 +81,10 @@ var recipeCard9 = {
 };
 var recipeCard10 = {
   dish:"",
+  isMeat : false,
   servingSize: "",
   time:"Prep:  | Cook: ",
   source:" Matt Ravenmoore ",
   ingredients:[],
   directions:[]
 };
-
-
-
