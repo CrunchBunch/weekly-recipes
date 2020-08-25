@@ -1,22 +1,27 @@
+h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+h2, h3, h4, h5, h6, p{
+  font-family: 'Spectral', serif;
+}
+
 html{
   width: auto;
-} 
+}
 
 body{
-  background-color: rgba(248, 211, 211, 0.907);
+  background-color: rgb(244, 232, 217);
+  margin: 20px 100px;
+}
+
+section{
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+form{
   margin: 10px;
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-  padding: 10px;
 }
-
-header{
-  color: rgba(248, 211, 211, 0.907);
-  background-color: rgb(62, 6, 173);
-  padding: 10px;
-}
-
-#user-info{
-  margin: 10px;
-  margin-top: 30px;
-}
-
