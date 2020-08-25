@@ -1,0 +1,16 @@
+body {
+  background-image: url("../img/Table.jpg");
+  background-size: cover;
+
+}
+
+#crunch-bunch {
+  display: flex;
+  align-content: space-evenly;
+  display: inline;
+}
+
+img {
+  height: 150px;
+  border-radius: 50%
+}
