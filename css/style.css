@@ -3,19 +3,20 @@ html{
 } 
 
 body{
-  background-color: brown;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(248, 211, 211, 0.907);
+  margin: 10px;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  padding: 10px;
 }
 
 header{
-  background-color: rgb(247, 181, 199);
+  color: rgba(248, 211, 211, 0.907);
+  background-color: rgb(62, 6, 173);
+  padding: 10px;
 }
 
 #user-info{
-  background-color: burlywood;
+  margin: 10px;
+  margin-top: 30px;
 }
-/* 
-form{
-
-} */
 
