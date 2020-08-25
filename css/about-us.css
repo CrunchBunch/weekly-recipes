@@ -54,6 +54,7 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
+  transition: all 1s ease;
   width: 350px;
   border-radius: 10px;
   box-shadow: 
@@ -63,6 +64,7 @@ article {
 }
 
 article:hover {
+  transition: all 1s ease;
   opacity: 1;
 }
 
