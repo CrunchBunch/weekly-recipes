@@ -1,15 +1,17 @@
 
-main{
-  height: 610px;
+body{
   background-image: url('../img/home-img.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
+main{
+  height: 500px;
+}
 
 header{
-  color: rgb(227, 136, 87);
-  background-color: rgba(23, 100, 32, 0.756);
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
   padding: 10px;
 }
 
@@ -45,10 +47,7 @@ header h1{
   width: 150px;
 }
 
-footer{
-  height: 75px;
-  background-color: rgba(23, 100, 32, 0.756);
-}
+
 
 #links, #links a{
   text-decoration-line: none;
