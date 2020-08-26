@@ -44,12 +44,19 @@ function render (array) {
   var recipeList4 = document.createElement('li');
   recipeList4.textContent = `${array.source}`;
   body.appendChild(recipeList4);
+  
+  //<================= Ingredients ====================>
+  for (var l = 0; l < array.ingredients.length; l++){
   var recipeList5 = document.createElement('li');
-  recipeList5.textContent = `${array.ingredients}`;
+  recipeList5.textContent = `${array.ingredients[l]}`;
   body.appendChild(recipeList5);
+  }
+  //<================ directions =======================>
+  for (var t = 0; t < array.directions.length; t++){
   var recipeList6 = document.createElement('li');
-  recipeList6.textContent = `${array.directions}`;
+  recipeList6.textContent = `${array.directions[t]}`;
   body.appendChild(recipeList6);
+  }
 }
 
 
