@@ -15,18 +15,14 @@ var Form = function(items) {
 var newForm = new Form([]);
 
 // <=================== Form constructor ================>
-var FormInfo = function(servings, protein, name) {
+var FormInfo = function(servings, protein, ) {
   this.servings = servings;
   this.protein = protein;
-  this.name = name;
 };
 
 // Add the Serving and quantity to the cart
 function addSelectedItemToForm() {
   // get the name
-  var userName = document.getElementById('name');
-  userName = userName.value;
-
   // get the servings
   var selectServings = document.getElementById('servings');
   var selectServings = selectServings.value;
