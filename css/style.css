@@ -25,3 +25,13 @@ body{
 form{
   margin: 10px;
 }
+#links, #links a{
+  text-decoration-line: none;
+  text-align: right;
+  color: rgb(227, 136, 87)
+
+}
+
+#links a:hover{
+  color: black;
+}
