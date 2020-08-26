@@ -38,55 +38,34 @@ font-family: 'Spectral', serif; -->
           <form id="form">
             <label for="dish">Dish:</label>
               <input type="text" id="dish" name="dish">
-            <label for="meal-type2"> Vegitarian:</label>
-              <input type="checkbox" id="Vegitarian" name="meal-type2" value="Vegitarian">
+            <label for="vegitarian"> Vegitarian:</label>
+              <input type="checkbox" id="vegitarian" name="vegitarian" value="vegitarian">
             <label for="servings">Serving Size:</label>
               <input type="text" id="serving Size" name="serving Size">
-            <label for="time"> Prep time: </label>
-              <input type="time" id="time" name="time"> 
-            <label for="time"> Time: </label>
-              <input type="time" id="time" name="time"> 
+            <label for="preptime"> Prep time: </label>
+              <input type="time" id="preptime" name="preptime"> 
+            <label for="cooktime">Cook Time: </label>
+              <input type="time" id="cooktime" name="cooktime"> 
             <label for="source"> Source: </label>
               <input type="text" id="source" name="source">  
             
-           
-          </form>            
+          </form>
 
           <form id="ingredients">
             <ul id="ingredients-list">
             <label for="ingredients"> Ingredients: </label>
-            <li>
-            <input type="text" id="ingredients" name="ingredients" placeholder="ingredients"> 
-            <input type="text" id="amount" name="amount" placeholder="amount"> 
-           </li>
-           <li>
-            <input type="text" id="ingredients" name="ingredients" placeholder="ingredients"> 
-            <input type="text" id="amount" name="amount" placeholder="amount"> 
-           </li>
-           <li>
-            <input type="text" id="ingredients" name="ingredients" placeholder="ingredients"> 
-            <input type="text" id="amount" name="amount" placeholder="amount"> 
-           </li>
-            
+            <!-- appened list is here -->
           </ul>
-            <button onclick="">Add line </button>
+            <button onclick="event.preventDefault(),renderIngredientsFormLines()">Add line </button>
           </form>
 
 
-          <form id="direction">
-          <label for="direction"> Direction: </label>
-          <ul>
-          <li>
-            <input type="text" id="direction" name="direction">    
-          </li>
-          <li>
-            <input type="text" id="direction" name="direction">    
-          </li>
-          <li>
-            <input type="text" id="direction" name="direction">    
-          </li>   
+          <form id="directions">
+            <ul id="directions-list">
+            <label for="direction"> Direction: </label>   
+    
           </ul> 
-            <button> Add line </button>  
+            <button onclick="event.preventDefault(),renderDirectionsFormLines()"> Add line </button>  
           </form>
           <input type="submit" value="Submit">
             
@@ -103,7 +82,8 @@ font-family: 'Spectral', serif; -->
     <footer>
      <p>Created by The CrunchBunch</p>
     </footer>
-    <script src="js/app.js"></script>
-    <script src="js/recipes.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/recipes.js"></script>
+    <script src="../js/recipe-box.js"></script>
   </body>
 </html>
