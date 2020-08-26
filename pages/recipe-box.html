@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Spectral:ital,wght@0,400;0,500;0,800;1,800&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Kaushan Script', cursive;
+font-family: 'Spectral', serif; -->
+
+<!-- Kaushan-header, spectral-subheader and body text -->
+    
+    <title>Recipe Box</title>
+  </head>
+  
+  <body>
+    <header>
+      
+      <h1>Recipe Box</h1>
+      <!-- user input feild should accept strings and compair aginst a stored list and either create a new user or access old user info(name so far) -->
+      <nav id="links">
+        <ul>
+          <li id="about-us"><a href="pages/about-us.html" >About the Team</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+    
+    <main>
+      
+      <section id="top">
+        <!-- Meal generator inputs takes in string of num of servings and checkbox for protien type and returns one random meal from recipes js -->
+        
+        <article id="random-form">
+          <feildset>
+          <form id="form">
+            <label for="dish">Dish:</label>
+              <input type="text" id="dish" name="dish">
+            <label for="meal-type2"> Vegitarian:</label>
+              <input type="checkbox" id="Vegitarian" name="meal-type2" value="Vegitarian">
+            <label for="servings">Serving Size:</label>
+              <input type="text" id="serving Size" name="serving Size">
+            <label for="time"> Prep time: </label>
+              <input type="time" id="time" name="time"> 
+            <label for="time"> Time: </label>
+              <input type="time" id="time" name="time"> 
+            <label for="source"> Source: </label>
+              <input type="text" id="source" name="source">  
+            
+           
+          </form>            
+
+          <form id="ingredients">
+            <ul id="ingredients-list">
+            <label for="ingredients"> Ingredients: </label>
+            <li>
+            <input type="text" id="ingredients" name="ingredients" placeholder="ingredients"> 
+            <input type="text" id="amount" name="amount" placeholder="amount"> 
+           </li>
+           <li>
+            <input type="text" id="ingredients" name="ingredients" placeholder="ingredients"> 
+            <input type="text" id="amount" name="amount" placeholder="amount"> 
+           </li>
+           <li>
+            <input type="text" id="ingredients" name="ingredients" placeholder="ingredients"> 
+            <input type="text" id="amount" name="amount" placeholder="amount"> 
+           </li>
+            
+          </ul>
+            <button onclick="">Add line </button>
+          </form>
+
+
+          <form id="direction">
+          <label for="direction"> Direction: </label>
+          <ul>
+          <li>
+            <input type="text" id="direction" name="direction">    
+          </li>
+          <li>
+            <input type="text" id="direction" name="direction">    
+          </li>
+          <li>
+            <input type="text" id="direction" name="direction">    
+          </li>   
+          </ul> 
+            <button> Add line </button>  
+          </form>
+          <input type="submit" value="Submit">
+            
+
+          </feildset>
+        </article>
+        
+        <img id="img1" src="../img/nuts.jpg" alt="something" title="something"/> 
+      
+      </section>
+
+    </main>
+    
+    <footer>
+     <p>Created by The CrunchBunch</p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/recipes.js"></script>
+  </body>
+</html>
