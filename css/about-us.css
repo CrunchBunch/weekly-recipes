@@ -100,4 +100,13 @@ article:hover {
 #links a:hover {
   color: rgba(45, 45, 247, 0.89)
 }
+.crunch-bunch, .crunch-bunch a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(93, 90, 64);
+  font-size: 1.3em;
+}
 
+.crunch-bunch a:hover {
+  color: rgba(45, 45, 247, 0.89)
+}

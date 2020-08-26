@@ -31,31 +31,33 @@ function showRecipe() {
 //<======================== Recipe data Render ===============================>
 
 function render (array) {
-  var body = document.getElementById('single-recipe');
-  var recipeList1 = document.createElement('li');
+  var body = document.getElementById('random-recipe');
+  var recipeList1 = document.createElement('p');
   recipeList1.textContent = `${array.dish}`;
   body.appendChild(recipeList1);
-  var recipeList2 = document.createElement('li');
+  var recipeList2 = document.createElement('p');
   recipeList2.textContent = `${array.servingSize}`;
   body.appendChild(recipeList2);
   var recipeList3 = document.createElement('li');
   recipeList3.textContent = `${array.time}`;
   body.appendChild(recipeList3);
-  var recipeList4 = document.createElement('li');
+  var recipeList4 = document.createElement('p');
   recipeList4.textContent = `${array.source}`;
   body.appendChild(recipeList4);
   
   //<================= Ingredients ====================>
+  var ingrediantsList = document.getElementById('ingrediants-list');
   for (var l = 0; l < array.ingredients.length; l++){
   var recipeList5 = document.createElement('li');
   recipeList5.textContent = `${array.ingredients[l]}`;
-  body.appendChild(recipeList5);
+  ingrediantsList.appendChild(recipeList5);
   }
   //<================ directions =======================>
+  var stepsList = document.getElementById('steps-list');
   for (var t = 0; t < array.directions.length; t++){
   var recipeList6 = document.createElement('li');
   recipeList6.textContent = `${array.directions[t]}`;
-  body.appendChild(recipeList6);
+  stepsList.appendChild(recipeList6);
   }
 }
 
