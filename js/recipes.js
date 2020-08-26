@@ -71,7 +71,7 @@ var recipeCard2 = {
 var recipeCard3 = {
   dish:"Swedish Meatballs",
   isMeat : true,
-  servingSize: "4-6",
+  servingSize: "4",
   time:"Prep: 1H 30min | Cook: 35min | Total 2 Hours",
   source:"All-recipes https://www.allrecipes.com/recipe/231169/chef-johns-swedish-meatballs/?internalSource=hub%20recipe&referringContentType=Search with tweeks by Matt Ravenmoore ",
   ingredients:['4 Tbsp Butter devided','1/2 Yellow Onion Finely Chopped','1/4 Cup Milk','2 Large Eggs','1/3 Cup Plain Bread Crumbs','1/4 Tsp Ground Nutmeg','1/4 Tsp Ground Allspice','1 Pound Ground Beef','1 Pound Ground Pork','3 tbsp flour','3 1/4 Cups Beef Broth','1/2 Cup Heavy Cream','1/4 Tsp Worcestershire Sauce','1 Tbsp dejon mustard','Salt and Pepper to Taste'],
@@ -80,7 +80,7 @@ var recipeCard3 = {
 var recipeCard4 = {
   dish:"slow cook Beef Stew",
   isMeat : true,
-  servingSize: "6-8",
+  servingSize: "6",
   time:"Prep: 25Min | Cook: minimum 4.5 hours | Total 5 Hours Minimum",
   source:" Matt Ravenmoore ",
   ingredients:['2 Pounds cubed meat(chefs choice beef lamb venison all good options)','2 Quarts beef stock','1/2 cup butter','3/4 red onion, chopped','3 cloves Garlic, Minced','2 Leaves of Bay Leaf','1/2 Tbsp Salt','1/2 Tsp flour','3/4 Tsp white Pepper','1 sprig of Rosemerry','1/4 Tsp of oregano','2 Tbsp Butter','3 medium carrots, chopped','6 medium potatoes, quartered','2 stalks celery, chopped'],
@@ -98,7 +98,7 @@ var recipeCard5 = {
 var recipeCard6 = {
   dish:"Roast chicken and Mashed potatoes",
   isMeat : true,
-  servingSize: "4-6",
+  servingSize: "4",
   time:"Prep: 20 Min | Cook: 1 Hour 10 Min | Total: 1 Hour 30 Min",
   source:" Matt Ravenmoore & Andre Olivier Martin ",
   ingredients:['1 whole chicken cleaned','2 1/2 Tbsp Smoked paprika','salt','pepper','1/2 yellow onion','1/2 cup pine nuts(or other nut)','1/4 cup dried fruit(cranberrys, raisins, apples are good options)in a 1/4 cup water','3 carrots','2 cloves of garlic minced seperated','7 Tbsp butter','pinch of thyme','1/2 a lemon','twine','2 pounds baking potatoes,peeled and quartered','1 cup cream'],

@@ -15,18 +15,14 @@ var Form = function(items) {
 var newForm = new Form([]);
 
 // <=================== Form constructor ================>
-var FormInfo = function(servings, protein, name) {
+var FormInfo = function(servings, protein) {
   this.servings = servings;
   this.protein = protein;
-  this.name = name;
 };
 
 // Add the Serving and quantity to the cart
 function addSelectedItemToForm() {
-  // get the name
-  var userName = document.getElementById('name');
-  userName = userName.value;
-
+ 
   // get the servings
   var selectServings = document.getElementById('servings');
   var selectServings = selectServings.value;
@@ -41,13 +37,13 @@ function addSelectedItemToForm() {
   }
 
   // TODO: using those, add one item to the Cart
-newForm.addInput(selectServings, selectedDiet, userName);
+newForm.addInput(selectServings, selectedDiet);
 
 }
 
-Form.prototype.addInput = function(servings, protein, name) {
+Form.prototype.addInput = function(servings, protein) {
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
-  this.items.push(new FormInfo(servings,protein, name));
+  this.items.push(new FormInfo(servings,protein));
 };
 Form.prototype.saveToLocalStorage = function() {
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
