@@ -10,6 +10,19 @@ function loadrecipe(){
   form = formInfo;
   
 }
+//<====================== Random Index of Recipe =============================>
+var recipeRandomIndex = [];
+// helper function - got this from mdn
+function getRandomNumber(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+//<========================= RandomGenerator =================================>
+function randomImage() {
+
+  var randomIndex = getRandomNumber(recipeRandomIndex.length); 
+  var chosenRecipe = recipeRandomIndex[randomIndex];
+  render(chosenRecipe);
+}
 
 //<===================== User Input for recipe ===============================>
 function showRecipe() {
@@ -18,10 +31,10 @@ function showRecipe() {
   
     for(var j = 0; j < recipe.length; j++) {
       if(form[i].servings === recipe[j].servingSize && form[i].protein === 'Meat' && recipe[j].isMeat === true){
-        render(recipe[j]);
+        recipeRandomIndex.push(recipe[j]);
       }
       if(form[i].servings === recipe[j].servingSize && form[i].protein === 'Vegitarian' && recipe[j].isMeat === false){
-        render(recipe[j]);
+        recipeRandomIndex.push(recipe[j]);
       }
     }
   }
@@ -65,4 +78,5 @@ function render (array) {
 //<======================= function call ======================================>
 loadrecipe();
 showRecipe();
+randomImage();
 console.log(form)
