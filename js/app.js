@@ -48,7 +48,7 @@ newForm.addInput(selectServings, selectedDiet, userName);
 Form.prototype.addInput = function(servings, protein, name) {
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
   this.items.push(new FormInfo(servings,protein, name));
-}
+};
 Form.prototype.saveToLocalStorage = function() {
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
   var stringForm = JSON.stringify(this.items);
@@ -59,9 +59,9 @@ Form.prototype.saveToLocalStorage = function() {
 function handleSubmit(event) {
 
   // TODO: Prevent the page from reloading
-  event.preventDefault();
+  // event.preventDefault();
   // Do all the things ...
-  addSelectedItemToForm()
+  addSelectedItemToForm();
   newForm.saveToLocalStorage();
 
 }
