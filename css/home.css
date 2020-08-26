@@ -1,0 +1,46 @@
+
+body{
+  background-image: url('../img/home-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+main{
+  height: 500px;
+}
+
+header{
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
+  padding: 10px;
+}
+
+header h1{
+  border-bottom: 8px black ridge;
+}
+
+#top{
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 10px;
+  position: relative;
+  top: 25%;
+  width: 50%;
+  background-color: rgba(202, 132, 28, 0.612);
+}
+
+#random-form{
+  width: 600px;
+  float: left;
+}
+
+#img1{
+  float: right;
+  width: 150px;
+}
+
+
+
