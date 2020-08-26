@@ -6,17 +6,22 @@ Description of scope of project
 
 ### Authors: 
 
-Andre Olivier Martin
-Czarl Jalos
-James Swift
-Matt Ravenmoore
-Mike Campbell
++ Andre Olivier Martin
++ Czarl Jalos
++ James Swift
++ Matt Ravenmoore
++ Mike Campbell
 
 ### Links and Resources
 
 * [Group Google doc with planing](https://docs.google.com/document/d/11yKzBXa8CmDfENOtymZlTDp7uFAWL7SMUSDhYg8KauE/edit)
 
 * [group trello](https://trello.com/b/2Iy8MkEZ/weekly-dinner-planner)
+
++ background image for recipe page: https://unsplash.com/photos/Tmz8FThN_BE
+
++ Background Image for About-us: https://unsplash.com/photos/WR20gOgB1m0
+
 
 ### Reflections and Comments
 
@@ -72,12 +77,12 @@ Describe the individual features that your product will do.
 
 + *Create 1-5 random recipes. Create recipe based on inputs. *
 
-OUT - What will your product not do.
+**OUT** - What will your product not do.
 Anything not related to drink or food.
 Minimum Viable Product vs
 What will your MVP functionality be?
 
-* One recipe pulled to a page rendered properly.*
+* **One** recipe pulled to a page rendered properly.*
 
 *What are your stretch goals?*
 
@@ -103,6 +108,8 @@ List the functionality of your product. This will consist of tasks such as the f
 ### Data Flow
 
 Describe the flow of data in your application. Write out what happens from the time the user begins using the app to the time the user is done with the app. Think about the “Happy Path” of the application. Describe through visuals and text what requests are made, and what data is processed, in addition to any other details about how the user moves through the site.
+
+
 
 ### Domain Modeling 
 

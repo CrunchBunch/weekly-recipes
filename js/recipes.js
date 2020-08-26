@@ -1,5 +1,52 @@
+
+//array of recipes
+var allrecipes = [];
+
+// constructor of recipe
+var Product = function(dish, isMeat, servingSize, time, source, ingredients, directions) {
+  this.dish = dish;
+  this.isMeat = isMeat
+  this.servingSize = servingSize;
+  this.time = time;
+  this.source = source;
+  this.ingredients = ingredients;
+  this.directions = directions;
+
+  allrecipes.push(this)
+};
+
+
+//object instance of recipes
+Product.prototype.AllRecipes = function(recipes) {
+  this.recipes = recipes;
+};
+
+Product.prototype.saveToLocalStorage = function() {
+  this.recipes = allrecipes;
+  var stringRecipes = JSON.stringify(this.recipes)
+  localStorage.setItem('recipes', stringRecipes);
+  
+}
+
+function generateRecipes() {
+new Product(recipeCard1.dish, recipeCard1.isMeat, recipeCard1.servingSize, recipeCard1.time, recipeCard1.source, recipeCard1.ingredients, recipeCard1.directions);
+
+new Product(recipeCard2.dish, recipeCard2.isMeat,  recipeCard2.servingSize, recipeCard2.time, recipeCard3.source, recipeCard2.ingredients, recipeCard2.directions);
+
+new Product(recipeCard3.dish, recipeCard3.isMeat,  recipeCard3.servingSize, recipeCard3.time, recipeCard3.source, recipeCard3.ingredients, recipeCard3.directions);
+
+new Product(recipeCard4.dish, recipeCard4.isMeat,  recipeCard4.servingSize, recipeCard4.time, recipeCard4.source, recipeCard4.ingredients, recipeCard4.directions);
+
+new Product(recipeCard5.dish, recipeCard5.isMeat,  recipeCard5.servingSize, recipeCard5.time, recipeCard5.source, recipeCard5.ingredients, recipeCard5.directions);
+
+new Product(recipeCard6.dish, recipeCard6.isMeat,  recipeCard6.servingSize, recipeCard6.time, recipeCard6.source, recipeCard6.ingredients, recipeCard6.directions);
+
+new Product(recipeCard7.dish, recipeCard7.isMeat,  recipeCard7.servingSize, recipeCard7.time, recipeCard7.source, recipeCard7.ingredients, recipeCard7.directions);
+}
+
 var recipeCard1 = {
   dish:"Shepards Pie",
+  isMeat : true,
   servingSize:"6",
   time:"Prep: 35 Min | Cook: 1 hour 15 Min | Total: 1 Hour 45 Min",
   source:"Matt Ravenmoore with credit to Gorden Ramsey for a base",
@@ -8,6 +55,7 @@ var recipeCard1 = {
 }
 var recipeCard2 = {
   dish:"Chicken Parmesan",
+  isMeat : true,
   servingSize: "4",
   time:"Prep: 25 Min | Cook: 20 Min | Total: 45 Min",
   source:"Matt Ravenmoore with credit to Gorden Ramsey for a base",
@@ -16,7 +64,8 @@ var recipeCard2 = {
 };
 var recipeCard3 = {
   dish:"Swedish Meatballs",
-  servingSize: "4-6",
+  isMeat : true,
+  servingSize: "4",
   time:"Prep: 1H 30min | Cook: 35min | Total 2 Hours",
   source:"All-recipes https://www.allrecipes.com/recipe/231169/chef-johns-swedish-meatballs/?internalSource=hub%20recipe&referringContentType=Search with tweeks by Matt Ravenmoore ",
   ingredients:['4 Tbsp Butter devided','1/2 Yellow Onion Finely Chopped','1/4 Cup Milk','2 Large Eggs','1/3 Cup Plain Bread Crumbs','1/4 Tsp Ground Nutmeg','1/4 Tsp Ground Allspice','1 Pound Ground Beef','1 Pound Ground Pork','3 tbsp flour','3 1/4 Cups Beef Broth','1/2 Cup Heavy Cream','1/4 Tsp Worcestershire Sauce','1 Tbsp dejon mustard','Salt and Pepper to Taste'],
@@ -24,7 +73,8 @@ var recipeCard3 = {
 };
 var recipeCard4 = {
   dish:"slow cook Beef Stew",
-  servingSize: "6-8",
+  isMeat : true,
+  servingSize: "6",
   time:"Prep: 25Min | Cook: minimum 4.5 hours | Total 5 Hours Minimum",
   source:" Matt Ravenmoore ",
   ingredients:['2 Pounds cubed meat(chefs choice beef lamb venison all good options)','2 Quarts beef stock','1/2 cup butter','3/4 red onion, chopped','3 cloves Garlic, Minced','2 Leaves of Bay Leaf','1/2 Tbsp Salt','1/2 Tsp flour','3/4 Tsp white Pepper','1 sprig of Rosemerry','1/4 Tsp of oregano','2 Tbsp Butter','3 medium carrots, chopped','6 medium potatoes, quartered','2 stalks celery, chopped'],
@@ -32,6 +82,7 @@ var recipeCard4 = {
 };
 var recipeCard5 = {
   dish:"Spinach and Strawberry Salad",
+  isMeat : false,
   servingSize: "8",
   time:"Prep: 10 Mins | Cook: 10 Mins | Total 20 Min",
   source:"all recipes: https://www.allrecipes.com/recipe/16409/spinach-and-strawberry-salad/?internalSource=hub%20recipe&referringContentType=Search",
@@ -40,7 +91,8 @@ var recipeCard5 = {
 };
 var recipeCard6 = {
   dish:"Roast chicken and Mashed potatoes",
-  servingSize: "4-6",
+  isMeat : true,
+  servingSize: "4",
   time:"Prep: 20 Min | Cook: 1 Hour 10 Min | Total: 1 Hour 30 Min",
   source:" Matt Ravenmoore & Andre Olivier Martin ",
   ingredients:['1 whole chicken cleaned','2 1/2 Tbsp Smoked paprika','salt','pepper','1/2 yellow onion','1/2 cup pine nuts(or other nut)','1/4 cup dried fruit(cranberrys, raisins, apples are good options)in a 1/4 cup water','3 carrots','2 cloves of garlic minced seperated','7 Tbsp butter','pinch of thyme','1/2 a lemon','twine','2 pounds baking potatoes,peeled and quartered','1 cup cream'],
@@ -48,6 +100,7 @@ var recipeCard6 = {
 };
 var recipeCard7 = {
   dish:"",
+  isMeat : false,
   servingSize: "",
   time:"Prep:  | Cook: ",
   source:" Matt Ravenmoore ",
@@ -56,6 +109,7 @@ var recipeCard7 = {
 };
 var recipeCard8 = {
   dish:"Disney's Ratatouille",
+  isMeat : false,
   servingSize: "4",
   time:"Prep: 45 mins | Cook:45 mins | Total: 1 hr 30 mins",
   source:" All Recipes https://www.allrecipes.com/recipe/222006/disneys-ratatouille/ with adapttions from Matt Ravenmoore",
@@ -64,6 +118,7 @@ var recipeCard8 = {
 };
 var recipeCard9 = {
   dish:"",
+  isMeat : false,
   servingSize: "",
   time:"Prep:  | Cook: ",
   source:" Matt Ravenmoore ",
@@ -72,6 +127,7 @@ var recipeCard9 = {
 };
 var recipeCard10 = {
   dish:"",
+  isMeat : false,
   servingSize: "",
   time:"Prep:  | Cook: ",
   source:" Matt Ravenmoore ",
@@ -79,5 +135,6 @@ var recipeCard10 = {
   directions:[]
 };
 
-
+generateRecipes();
+Product.prototype.saveToLocalStorage();
 
