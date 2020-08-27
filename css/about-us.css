@@ -50,7 +50,7 @@ article {
   margin: auto;
   padding: 40px 40px;
   margin-bottom: 40px;
-  background: url(../img/note\ card.jpg);
+  background: url(../img/index-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.525;
@@ -93,12 +93,12 @@ article:hover {
 #links, #links a {
   text-align: center;
   text-decoration: none;
-  color: whitesmoke;
+  color: rgba(65, 40, 16, 0.89);
   font-size: 1.3em;
 }
 
 #links a:hover {
-  color: rgba(45, 45, 247, 0.89)
+  color: rgba(46, 46, 199, 0.712)
 }
 .crunch-bunch, .crunch-bunch a {
   text-align: center;

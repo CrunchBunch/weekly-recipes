@@ -46,14 +46,3 @@ header h1{
   background-color: rgba(161, 117, 51, 0.8);
 }
 
-#links {
-  color: rgb(223, 138, 26);
-  background-color: rgba(23, 100, 32, 0.842);
-  border: black ridge;
-  border-radius: 25px;
-  padding: 8px;
-  width: fit-content;
-  float: right;
-
-}
-

@@ -1,0 +1,92 @@
+body {
+  background-image: url("../img/cutboard.jpg");
+  background-size: cover;
+  margin: 2% 10%;
+  color: rgb(29, 28, 28);
+  overflow: visible;
+}
+
+#Recipe-Card {
+  display: flex;
+  align-content: space-evenly;
+  display: inline;
+}
+
+.Recipe-Card h2 {
+  font-weight: bolder;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+section {
+  margin: auto;
+  padding: 40px 40px;
+  margin-bottom: 40px;
+  background: url(../img/index-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  transition: all 1s ease;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 
+  inset 0 -3em 3em rgba(0,0,0,0.1), 
+  0 0  0 0px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+article:hover {
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+#people1 {
+  text-align: center;
+}
+
+#header {
+  background: none;
+  opacity: 1;
+  box-shadow: none;
+  padding-bottom: 100px;
+}
+
+.Recipe-Card img {
+  height: 150px;
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: 
+  inset 0 -5em 5em rgba(0,0,0,0.1), 
+  0 0  0 0px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+#links, #links a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(65, 40, 16, 0.89);
+  font-size: 1.3em;
+}
+
+#links a:hover {
+  color: rgba(46, 46, 199, 0.712)
+}
+.Recipe-Card, .Recipe-Card a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(93, 90, 64);
+  font-size: 1.3em;
+}
+
+.Recipe-Card a:hover {
+  color: rgba(45, 45, 247, 0.89)
+}
+
+footer {
+  background-color: rgba(202, 132, 28, 0.612);
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  padding: 8px;
+  width: fit-content;
+}
