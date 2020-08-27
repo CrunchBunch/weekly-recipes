@@ -33,7 +33,7 @@ function showRecipe() {
       if(form[i].servings === recipe[j].servingSize && form[i].protein === 'Meat' && recipe[j].isMeat === true){
         recipeRandomIndex.push(recipe[j]);
       }
-      if(form[i].servings === recipe[j].servingSize && form[i].protein === 'Vegitarian' && recipe[j].isMeat === false){
+      if(form[i].servings === recipe[j].servingSize && form[i].protein === 'Vegetarian' && recipe[j].isMeat === false){
         recipeRandomIndex.push(recipe[j]);
       }
     }
