@@ -1,9 +1,7 @@
 
-function loadrecipe(){
-  myRecipes = JSON.parse(localStorage.getItem('myRecipes'));;
-
-
-}
+// function loadrecipe(){
+//   myRecipes = JSON.parse(localStorage.getItem('myRecipes'));;
+// }
 //array of recipes
 var myRecipes = [];
 var ingredientArr = [];
@@ -26,7 +24,7 @@ var RecipeCard = function(dish, isMeat, servingSize, time, source,ingredients, a
 }
 var ingredientsList= function(event){
   for (var i= 1 ; i < ingredientLineCount; i++){
-    ingredientArr.push(document.getElementById(`ingredient${i}`.value));
+    // ingredientArr.push(document.getElementById(`ingredient${i}`.value));
     ingredientArr.push(eval(`event.target.ingredient${i}.value`));
     amountArr.push(eval(`event.target.amount${i}.value`));
   }
@@ -38,7 +36,6 @@ var directionsList = function(event){
 }    
 function recipeSubmit(event){
   event.preventDefault();
-  alert('IM A DRAGON')
   var dish = event.target.dish.value;
   var isMeat;
    if (document.getElementById('vegitarian').checked) {
@@ -55,7 +52,8 @@ function recipeSubmit(event){
   var directions = directionsArr;
   ingredientsList(event);
   directionsList(event);
-  new RecipeCard(dish, isMeat, servingSize, time, source,ingredients,directions);
+  new RecipeCard(dish, isMeat, servingSize, time, source,ingredients, amount,directions );
+  renderRecipeBox(myRecipes[0]);
   RecipeCard.prototype.saveToLocalStorage();
   }
 // new ingredients line add button
@@ -110,49 +108,42 @@ RecipeCard.prototype.saveToLocalStorage = function() {
   localStorage.setItem('myRecipes', stringRecipes);
 }
 
-function renderRecipeBox (array) {
-  console.log(array);
-  var recipeCardParent = document.getElementById('All-Recipe-Cards');
-  for(var i = 0 ; i < array.length ;i++){
-    var recipeCards = document.createElement('div');
-    recipeCards.setAttribute('id','Recipe-Card');
-    
-    var recipeList1 = document.createElement('p');
-    recipeList1.textContent = `${array.dish}`;
-    recipeCards.appendChild(recipeList1);
-    var recipeList2 = document.createElement('p');
-    recipeList2.textContent = `${array.servingSize}`;
-    recipeCards.appendChild(recipeList2);
-    var recipeList3 = document.createElement('li');
-    recipeList3.textContent = `${array.time}`;
-    recipeCards.appendChild(recipeList3);
-    var recipeList4 = document.createElement('p');
-    recipeList4.textContent = `${array.source}`;
-    recipeCards.appendChild(recipeList4);
-  }
+function renderRecipeBox(array) {
+  var body = document.getElementById('rendered-Recipes');
+  var recipeList1 = document.createElement('p');
+  recipeList1.textContent = `Dish: ${array.dish}`;
+  body.appendChild(recipeList1);
+  var recipeList2 = document.createElement('p');
+  recipeList2.textContent = `Serving size: ${array.servingSize}`;
+  body.appendChild(recipeList2);
+  var recipeList3 = document.createElement('li');
+  recipeList3.textContent = `${array.time}`;
+  body.appendChild(recipeList3);
+  var recipeList4 = document.createElement('p');
+  recipeList4.textContent = `Source: ${array.source}`;
+  body.appendChild(recipeList4);
+  
   //<================= Ingredients ====================>
-  var ingredientCards = document.createElement('div');
-    ingredientCards.setAttribute('id','ingrediants-Rendered-List');
-  for (var i = 0; i < ingredientArr.length; i++){
-  var recipeList5 = document.createElement('li');
-  recipeList5.textContent = `${ingredientArr[i]}`;
-  console.log(recipeList5,ingredientArr[i]);
-  ingredientCards.appendChild(recipeList5);
+  var ingrediantsList = document.getElementById('ingrediants-Rendered-List');
+  for (var l = 0; l < array.ingredients.length; l++){
+    var recipeList5 = document.createElement('li');
+  recipeList5.textContent = `${array.amount[l]} pcs of ${array.ingredients[l]} `;
+  ingrediantsList.appendChild(recipeList5);
   }
   //<================ directions =======================>
-  var stepsList = document.createElement('div');
-  stepsList.setAttribute('id','directions-Rendered-list')
-  for (var t = 0; t < directionsArr.length; t++){
+  var stepsList = document.getElementById('directions-Rendered-list');
+  for (var t = 0; t < array.directions.length; t++){
   var recipeList6 = document.createElement('li');
-  recipeList6.textContent = `${directionsArr[t]}`;
+  recipeList6.textContent = `${array.directions[t]}`;
   stepsList.appendChild(recipeList6);
   }
+  }
   
-}
+
 
 onPageLoad(3);
-loadrecipe()
+// loadrecipe()
 // generateRecipes();
-renderRecipeBox(myRecipes);
+// renderRecipeBox(myRecipes);
 //need recall for datastore to populate card
 form.addEventListener('submit',recipeSubmit);
