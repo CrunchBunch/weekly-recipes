@@ -25,3 +25,21 @@ body{
 form{
   margin: 10px;
 }
+#links, #links a{
+  text-decoration-line: none;
+  text-align: right;
+  color: rgb(227, 136, 87)
+
+}
+#links li{
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
+  border: black ridge;
+  border-radius: 25px;
+  padding: 8px;
+  width: fit-content;
+  display: inline-block;
+}
+#links a:hover{
+  color: black;
+}

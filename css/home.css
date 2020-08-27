@@ -1,25 +1,22 @@
 
-main{
-  height: 610px;
+body{
   background-image: url('../img/home-img.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
+main{
+  height: 500px;
+}
 
 header{
-  color: rgb(227, 136, 87);
-  background-color: rgba(23, 100, 32, 0.756);
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
   padding: 10px;
 }
 
 header h1{
   border-bottom: 8px black ridge;
-}
-
-#user-info{
-  margin: 10px;
-  margin-top: 30px;
 }
 
 #top{
@@ -44,20 +41,14 @@ header h1{
   float: right;
   width: 150px;
 }
-
-footer{
-  height: 75px;
-  background-color: rgba(23, 100, 32, 0.756);
-}
-
-#links, #links a{
-  text-decoration-line: none;
+footer {
   text-align: right;
-  color: rgb(227, 136, 87)
-
+  background-color: rgba(202, 132, 28, 0.612);
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  float: right;
+  padding: 2px;
+  width: 220px;
 }
 
-#links a:hover{
-  color: black;
-}
 

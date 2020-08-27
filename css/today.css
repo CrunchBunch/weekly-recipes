@@ -1,0 +1,48 @@
+
+body{
+  background-image: url('../img/cuttingboard90.jpg');
+  background-size: cover;
+ 
+
+
+}
+main{
+  height: 500px;
+}
+
+header{
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
+  padding: 10px;
+}
+
+header h1{
+  border-bottom: 8px black ridge;
+}
+
+#user-info{
+  margin: 10px;
+  margin-top: 30px;
+}
+
+
+
+#random-form{
+  width: 600px;
+  float: left;
+}
+
+#img1{
+  float: right;
+  width: 150px;
+}
+
+#ingrediants-list , #steps-list , #random-recipe{
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  background-color: rgba(161, 117, 51, 0.8);
+}
+

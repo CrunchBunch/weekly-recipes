@@ -50,10 +50,10 @@ article {
   margin: auto;
   padding: 40px 40px;
   margin-bottom: 40px;
-  background: url(https://i.imgur.com/pNdIQeG.jpg);
+  background: url(../img/index-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.525;
   transition: all 1s ease;
   width: 350px;
   border-radius: 10px;
@@ -93,11 +93,28 @@ article:hover {
 #links, #links a {
   text-align: center;
   text-decoration: none;
-  color: whitesmoke;
+  color: rgba(65, 40, 16, 0.89);
   font-size: 1.3em;
 }
 
 #links a:hover {
+  color: rgba(46, 46, 199, 0.712)
+}
+.crunch-bunch, .crunch-bunch a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(93, 90, 64);
+  font-size: 1.3em;
+}
+
+.crunch-bunch a:hover {
   color: rgba(45, 45, 247, 0.89)
 }
 
+footer {
+  background-color: rgba(202, 132, 28, 0.612);
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  padding: 8px;
+  width: fit-content;
+}
