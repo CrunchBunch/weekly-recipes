@@ -2,7 +2,7 @@ body {
   background-image: url("../img/Table.jpg");
   background-size: cover;
   margin: 2% 10%;
-  color: rgb(29, 28, 28);
+  color: rgb(19, 19, 19);
   overflow: visible;
 }
 
@@ -112,9 +112,11 @@ article:hover {
 }
 
 footer {
+  text-align: right;
   background-color: rgba(202, 132, 28, 0.612);
   border: 5px rgb(148, 145, 51) ridge;
   border-radius: 25px;
-  padding: 8px;
-  width: fit-content;
+  padding: 2px;
+  width: 220px;
+  margin: 0 auto;
 }
