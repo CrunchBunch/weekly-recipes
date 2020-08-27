@@ -21,12 +21,6 @@ Product.prototype.AllRecipes = function(recipes) {
   this.recipes = recipes;
 };
 
-Product.prototype.addInput = function(dish, servingSize, time, source, ingredients, directions) {
-
-  this.recipes.push(new FormInfo(servings,protein, name));
-
-}
-
 Product.prototype.saveToLocalStorage = function() {
   this.recipes = allrecipes;
   var stringRecipes = JSON.stringify(this.recipes)
