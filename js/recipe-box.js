@@ -1,31 +1,58 @@
+var form = document.getElementById("form");
 //array of recipes
 var myRecipes = [];
-
+var ingredientArr = [];
+var amountArr =[];
+var directionsArr = [];
+var ingredientLineCount = 1;
+var directionsLineCount = 1;
 // constructor of recipe
-var RecipeCard = function(dish, isMeat, servingSize, time, source, ingredients, directions) {
+var RecipeCard = function(dish, isMeat, servingSize, time, source,ingredients, amount,directions ) {
   this.dish = dish;
   this.isMeat = isMeat
   this.servingSize = servingSize;
   this.source = source;
   this.time = time;
-  this.ingredients = ingredientsList(ingredients,amount);
-  this.directions = directionsList(directions);
+  this.ingredients = ingredients;
+  this.directions = directions;
+  this.amount = amount;
 
   myRecipes.push(this)
 }
-
-var directionsList = function(ingredients,amount){
-  var ingredients = event.target.ingrediants.value;
-  var amount = event.target.amount.value;
-  
-}   
-var IngredientsList = function(ingredients,amount){
-  var ingredients = event.target.ingrediants.value;
-  var amount = event.target.amount.value;
-
+var ingredientsList= function(event){
+  for (var i= 1 ; i < ingredientLineCount; i++){
+    ingredientArr.push(document.getElementById(`ingredient${i}`.value));
+    ingredientArr.push(eval(`event.target.ingredient${i}.value`));
+    amountArr.push(eval(`event.target.amount${i}.value`));
+  }
+}
+var directionsList = function(event){
+  for (var i = 1 ;i < directionsLineCount; i++){
+    directionsArr.push(eval(`event.target.directions${i}.value`));
+  }
 }    
-var ingredientLineCount = 1;
-
+function recipeSubmit(event){
+  event.preventDefault();
+  alert('IM A DRAGON')
+  var dish = event.target.dish.value;
+  var isMeat;
+   if (document.getElementById('vegitarian').checked) {
+    isMeat = document.getElementById('vegitarian').value;
+  };
+  var servingSize = event.target.servings.value;
+  var source = event.target.source.value;
+  var prepTime = event.target.preptime.value;
+  var cookTime = event.target.cooktime.value;
+  var totalTime = prepTime + cookTime;
+  var time = [prepTime, cookTime, totalTime];
+  var ingredients = ingredientArr;
+  var amount = amountArr;
+  var directions = directionsArr;
+  ingredientsList(event);
+  directionsList(event);
+  new RecipeCard(dish, isMeat, servingSize, time, source,ingredients,directions);
+  RecipeCard.prototype.saveToLocalStorage();
+  }
 // new ingredients line add button
 function renderIngredientsFormLines(){
 
@@ -47,8 +74,6 @@ function renderIngredientsFormLines(){
   ingredientsFormLine.appendChild(amount);
   ingredientLineCount++;
 }
-var directionsLineCount = 1;
-
 // new ingredients line add button
 function renderDirectionsFormLines(){
 
@@ -73,37 +98,48 @@ function onPageLoad(startIngredients){
   
   }  
 }
-onPageLoad(4);
-
-function recipeSubmit(event){
-  eventPreventDefault;
-  var dish = event.target.dish.value;
-  var isMeat;
-   if (document.getElementById('vegitarian').checked) {
-    isMeat = document.getElementById('vegitarian').value;
-  };
-  var servingSize = event.target.servings.value;
-  var source = event.target.source.value;
-  var prepTime = event.target.preptime.value;
-  var cookTime = event.target.cooktime.value;
-  var totalTime = prepTime + cookTime;
-  var time = [prepTime, cookTime, totalTime];
-  var ingrediants = ingredientsList(ingredients,amount);
-  var directions = directionsList(directions);
-
-  }
-  
-// local storage process
-Product.prototype.AllRecipes = function(recipes) {
-  this.recipes = recipes;
-};
-
-Product.prototype.saveToLocalStorage = function() {
-  this.recipes = allrecipes;
-  var stringRecipes = JSON.stringify(this.recipes)
-  localStorage.setItem('recipes', stringRecipes);
-  
+RecipeCard.prototype.saveToLocalStorage = function() {
+  this.recipes = myRecipes;
+  var stringRecipes = JSON.stringify(this.recipes);
+  console.log(stringRecipes);
+  localStorage.setItem('myRecipes', stringRecipes);
 }
 
-generateRecipes();
-Product.prototype.saveToLocalStorage();
+function renderRecipeBox (array) {
+  console.log(array);
+  var body = document.getElementById('rendered-Recipes');
+  var recipeList1 = document.createElement('p');
+  recipeList1.textContent = `${array.dish}`;
+  body.appendChild(recipeList1);
+  var recipeList2 = document.createElement('p');
+  recipeList2.textContent = `${array.servingSize}`;
+  body.appendChild(recipeList2);
+  var recipeList3 = document.createElement('li');
+  recipeList3.textContent = `${array.time}`;
+  body.appendChild(recipeList3);
+  var recipeList4 = document.createElement('p');
+  recipeList4.textContent = `${array.source}`;
+  body.appendChild(recipeList4);
+  
+  //<================= Ingredients ====================>
+  var renderIngrediantsList = document.getElementById('ingrediants-Rendered-List');
+  for (var i = 0; i < ingredientArr.length; i++){
+  var recipeList5 = document.createElement('li');
+  recipeList5.textContent = `${ingredientArr[i]}`;
+  console.log(recipeList5,ingredientArr[i]);
+  renderIngrediantsList.appendChild(recipeList5);
+  }
+  //<================ directions =======================>
+  var stepsList = document.getElementById('directions-Rendered-list');
+  for (var t = 0; t < directionsArr.length; t++){
+  var recipeList6 = document.createElement('li');
+  recipeList6.textContent = `${directionsArr[t]}`;
+  stepsList.appendChild(recipeList6);
+  }
+}
+
+onPageLoad(3);
+// generateRecipes();
+renderRecipeBox(myRecipes);
+//need recall for datastore to populate card
+form.addEventListener('submit',recipeSubmit)
