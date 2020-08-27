@@ -50,7 +50,7 @@ article {
   margin: auto;
   padding: 40px 40px;
   margin-bottom: 40px;
-  background: url(https://i.imgur.com/pNdIQeG.jpg);
+  background: url(../img/note\ card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.525;
@@ -109,4 +109,12 @@ article:hover {
 
 .crunch-bunch a:hover {
   color: rgba(45, 45, 247, 0.89)
+}
+
+footer {
+  background-color: rgba(202, 132, 28, 0.612);
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  padding: 8px;
+  width: fit-content;
 }
