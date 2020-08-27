@@ -41,40 +41,43 @@ font-family: 'Spectral', serif; -->
             <label for="vegitarian"> Vegitarian:</label>
               <input type="checkbox" id="vegitarian" name="vegitarian" value="vegitarian">
             <label for="servings">Serving Size:</label>
-              <input type="text" id="serving Size" name="serving Size">
+              <input type="text" id="servings" name="serving Size">
             <label for="preptime"> Prep time: </label>
               <input type="time" id="preptime" name="preptime"> 
             <label for="cooktime">Cook Time: </label>
               <input type="time" id="cooktime" name="cooktime"> 
             <label for="source"> Source: </label>
               <input type="text" id="source" name="source">  
-            
-          </form>
-
-          <form id="ingredients">
+          
             <ul id="ingredients-list">
             <label for="ingredients"> Ingredients: </label>
             <!-- appened list is here -->
           </ul>
             <button onclick="event.preventDefault(),renderIngredientsFormLines()">Add line </button>
-          </form>
-
-
-          <form id="directions">
             <ul id="directions-list">
-            <label for="direction"> Direction: </label>   
-    
+            <label for="direction"> Direction: </label>
+            <!-- appened list of directions here -->
           </ul> 
             <button onclick="event.preventDefault(),renderDirectionsFormLines()"> Add line </button>  
+            <input type="submit" value="submit">
           </form>
-          <input type="submit" value="Submit">
-            
-
           </feildset>
         </article>
         
         <img id="img1" src="../img/nuts.jpg" alt="something" title="something"/> 
       
+      </section>
+      <section id="Recipe-Cards">
+        <article id="rendered-Recipes">
+
+        </article>
+        <article id="ingrediants-Rendered-List">
+
+        </article>
+        <article id= "directions-Rendered-list">
+
+        </article>
+
       </section>
 
     </main>
@@ -82,8 +85,7 @@ font-family: 'Spectral', serif; -->
     <footer>
      <p>Created by The CrunchBunch</p>
     </footer>
-    <script src="../js/app.js"></script>
-    <script src="../js/recipes.js"></script>
+    <!-- <script src="../js/recipes.js"></script> -->
     <script src="../js/recipe-box.js"></script>
   </body>
 </html>
