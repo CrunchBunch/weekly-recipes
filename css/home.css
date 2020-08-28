@@ -16,9 +16,10 @@ main{
   position: relative;
   top: 25%;
   width: 50%;
-  background-color: rgba(202, 132, 28, 0.612);
+  background-color: rgba(202, 132, 28, 0.757);
 }
 #random-form{
   width: 600px;
+  margin: 5px auto;
   /* float: left; */
 }

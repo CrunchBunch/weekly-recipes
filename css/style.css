@@ -8,7 +8,7 @@ h2 {
   font-size: 48px;
 }
 h3 {
-  font-size: 22px;
+  font-size: 26px;
   font-family: 'Kaushan Script', cursive;
 }
 h4 {
@@ -48,7 +48,7 @@ header h1 {
   border-bottom: 8px black ridge;
 }
 body {
-  background-color: rgb(244, 232, 217);
+  background-color: rgb(202, 132, 28, 0.825);
   margin: 20px 100px;
 }
 form {
