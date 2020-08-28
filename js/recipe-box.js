@@ -100,6 +100,7 @@ function renderRecipeBox(array) {
   for (var i = 0; i < array.length; i++) {
   var recipeCard = document.createElement('div');
   recipeCard.setAttribute('id',`Recipe-Cards`)
+  recipeCard.setAttribute('class',`Recipe-Cards`)
   var recipeList1 = document.createElement('article');
   recipeList1.setAttribute('id',`rendered-Recipes`);
 
