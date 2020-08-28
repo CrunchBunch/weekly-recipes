@@ -7,7 +7,8 @@
 //   }
 
 // }
-  
+//<============ local storage =============>
+var recipeItems = JSON.parse(localStorage.getItem('recipes'));
 
 //array of recipes
 
@@ -60,9 +61,10 @@ function recipeSubmit(event){
   var directions = directionsArr;
   ingredientsList(event);
   directionsList(event);
-  new RecipeCard(dish, isMeat, servingSize, time, source,ingredients, amount,directions );
-  renderRecipeBox(myRecipesArr[0]);
-  saveToLocalStorage();
+  var data = new RecipeCard(dish, isMeat, servingSize, time, source,ingredients, amount,directions );
+  // console.log('this is' + ' ' + data);
+  renderRecipeBox(recipeItems);
+  saveToLocalStorage(data);
   }
 // new ingredients line add button
 function renderIngredientsFormLines(){
@@ -109,49 +111,57 @@ function onPageLoad(startIngredients){
   }  
   
 }
-function saveToLocalStorage(){
-  myRecipes= JSON.stringify(myRecipesArr);
-  console.log(myRecipes);
-  localStorage.setItem('myRecipesJSON', myRecipes);
+function saveToLocalStorage(data){
+  myRecipes= Object.assign(JSON.stringify(myRecipesArr));
+  var defaultStorage = [];
+  defaultStorage = JSON.parse(localStorage.getItem('recipes')) || [];
+  defaultStorage.push(data)
+  localStorage.setItem('recipes', JSON.stringify(defaultStorage));
 }
 function renderRecipeBox(array) {
-  var parentRecipe = document.getElementById('Recipe-Cards');
+  var parentRecipe = document.getElementById('Recipe-Cards-holder');
+
+  for (var i = 0; i < array.length; i++) {
+  var recipeCard = document.createElement('div');
+  recipeCard.setAttribute('id',`Recipe-Cards`)
   var recipeList1 = document.createElement('article');
   recipeList1.setAttribute('id',`rendered-Recipes`);
-  parentRecipe.appendChild(recipeList1)
-  var body = document.getElementById('rendered-Recipes');
-  var recipeList1 = document.createElement('p');
-  recipeList1.textContent = `Dish: ${array.dish}`;
-  body.appendChild(recipeList1);
-  var recipeList2 = document.createElement('p');
-  recipeList2.textContent = `Serving size: ${array.servingSize}`;
-  body.appendChild(recipeList2);
-  var recipeList3 = document.createElement('li');
-  recipeList3.textContent = `${array.time}`;
-  body.appendChild(recipeList3);
-  var recipeList4 = document.createElement('p');
-  recipeList4.textContent = `Source: ${array.source}`;
-  body.appendChild(recipeList4);
+  // var body = document.getElementById('rendered-Recipes');
+  var recipeParagraph = document.createElement('h3');
+  recipeParagraph.textContent = `Dish: ${array[i].dish}`;
+  recipeList1.appendChild(recipeParagraph);
+  var recipeServingSize = document.createElement('p');
+  recipeServingSize.textContent = `Serving size: ${array[i].servingSize}`;
+  recipeList1.appendChild(recipeServingSize);
+  var recipeTime = document.createElement('li');
+  recipeTime.textContent = `${array[i].time}`;
+  recipeList1.appendChild(recipeTime);
+  var recipeSource = document.createElement('p');
+  recipeSource.textContent = `Source: ${array[i].source}`;
+  recipeList1.appendChild(recipeSource);
+  recipeCard.appendChild(recipeList1)
   //<================= Ingredients ====================>
   var recipeList2 = document.createElement('article');
   recipeList2.setAttribute('id',`ingrediants-Rendered-List`);
-  parentRecipe.appendChild(recipeList2)
-  var ingrediantsList = document.getElementById('ingrediants-Rendered-List');
-  for (var l = 0; l < array.ingredients.length; l++){
-    var recipeList5 = document.createElement('li');
-  recipeList5.textContent = `${array.amount[l]} pcs of ${array.ingredients[l]} `;
-  ingrediantsList.appendChild(recipeList5);
+  // var ingrediantsList = document.getElementById('ingrediants-Rendered-List');
+  for (var l = 0; l < array[i].ingredients.length; l++){
+    var recipeIngredients = document.createElement('li');
+    recipeIngredients.textContent = ` pcs of ${array[i].ingredients[l]} `;
+    recipeList2.appendChild(recipeIngredients);
   }
+  recipeCard.appendChild(recipeList2)
   //<================ directions =======================>
   var recipeList3 = document.createElement('article');
   recipeList3.setAttribute('id',`directions-Rendered-list`);
-  parentRecipe.appendChild(recipeList3)
-  var stepsList = document.getElementById('directions-Rendered-list');
-  for (var t = 0; t < array.directions.length; t++){
-  var recipeList6 = document.createElement('li');
-  recipeList6.textContent = `${array.directions[t]}`;
-  stepsList.appendChild(recipeList6);
+  // var stepsList = document.getElementById('directions-Rendered-list');
+  for (var t = 0; t < array[i].directions.length; t++){
+  var recipeDirections = document.createElement('li');
+  recipeDirections.textContent = `${array[i].directions[t]}`;
+  recipeList3.appendChild(recipeDirections);
   }
+  recipeCard.appendChild(recipeList3);
+  parentRecipe.appendChild(recipeCard);
+}
   }
 // function createCard(){
 //   for(var i=0 ;i<allRecipes)
