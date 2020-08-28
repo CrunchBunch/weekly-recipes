@@ -94,6 +94,8 @@ function saveToLocalStorage(data){
   defaultStorage.push(data)
   localStorage.setItem('allRecipes', JSON.stringify(defaultStorage));
 }
+
+
 function renderRecipeBox(array) {
   var parentRecipe = document.getElementById('Recipe-Cards-holder');
 
@@ -122,14 +124,17 @@ function renderRecipeBox(array) {
   recipeList2.setAttribute('id',`ingrediants-Rendered-List`);
   for (var l = 0; l < array[i].ingredients.length; l++){
     var recipeIngredients = document.createElement('li');
-    recipeIngredients.textContent = ` pcs of ${array[i].ingredients[l]} `;
+    recipeIngredients.textContent = `${array[i].ingredients[l]} `;
     recipeList2.appendChild(recipeIngredients);
+    if (i > 9) {
+      recipeIngredients.textContent = `${array[i].amount[l]} pcs of ${array[i].ingredients[l]} `;
+    recipeList2.appendChild(recipeIngredients);
+    }
   }
   recipeCard.appendChild(recipeList2)
   //<================ directions =======================>
   var recipeList3 = document.createElement('article');
   recipeList3.setAttribute('id',`directions-Rendered-list`);
-  // var stepsList = document.getElementById('directions-Rendered-list');
   for (var t = 0; t < array[i].directions.length; t++){
   var recipeDirections = document.createElement('li');
   recipeDirections.textContent = `${array[i].directions[t]}`;
@@ -159,9 +164,12 @@ function renderRecipeBox(array) {
     ingredientsList(event);
     directionsList(event);
     var data = new RecipeCard(dish, isMeat, servingSize, time, source,ingredients, amount,directions );
-    renderRecipeBox(recipeItems);
     saveToLocalStorage(data);
+    var recipeItems = JSON.parse(localStorage.getItem('allRecipes'));
+    document.getElementById('Recipe-Cards-holder').innerHTML = '';
+    renderRecipeBox(recipeItems);
     }  
 
 onPageLoad(3);
+renderRecipeBox(recipeItems);
 form.addEventListener('submit',recipeSubmit);
