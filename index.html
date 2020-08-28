@@ -23,6 +23,7 @@ font-family: 'Spectral', serif; -->
       <nav id="links">
         <ul>
           <li id="about-us"><a href="pages/about-us.html" >About the Team</a></li>
+          <li id="Recipe-box"><a href="pages/recipe-box.html">Recipe-Box</a></li>
         </ul>
       </nav>
     
@@ -32,7 +33,10 @@ font-family: 'Spectral', serif; -->
       
       <section id="top">
         <!-- Meal generator inputs takes in string of num of servings and checkbox for protien type and returns one random meal from recipes js -->
-        
+        <article id='welcome'>
+          <h3>Welcome to the meal helper</h3>
+          <p>Feeling indecisive? Not sure what to make tonight for that big dinner or romantic treat for that special someone. Welcome to the Meal Helper.  Enter the number of servings and your preference of either meat or vegetarian meal and our magic meal generator will provide you with a recipe.</p>
+        </article>
         <article id="random-form">
           <feildset>
           <form id="form" action="pages/todays-meal.html">
@@ -41,21 +45,22 @@ font-family: 'Spectral', serif; -->
            
             <label for="meal-type1"> Meat</label>
             <input type="checkbox" id="meal-type1" name="meal-type1" value="Meat">
-            <label for="meal-type2"> Vegitarian</label>
-            <input type="checkbox" id="meal-type2" name="meal-type2" value="Vegitarian">
+            <label for="meal-type2"> Vegetarian</label>
+            <input type="checkbox" id="meal-type2" name="meal-type2" value="Vegetarian">
             <input type="submit" value="Submit">
               <!--submit button should send user to todays-meal.html  -->
           </form>            
           </feildset>
         </article>
         
-        <img id="img1" src="../img/nuts.jpg" alt="something" title="something"/> 
-      
       </section>
     
     </main>
     
     <footer>
+
+      <img id="img1" src="../img/nuts.jpg" alt="something" title="something"/> 
+      
      <p>Created by The CrunchBunch</p>
     </footer>
     <script src="js/app.js"></script>

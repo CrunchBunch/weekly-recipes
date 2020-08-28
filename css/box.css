@@ -1,0 +1,36 @@
+body {
+  background-image: url("../img/cutboard.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+#first-row{
+  background-image: url(../img/index-card.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgb(202, 132, 28, 0.825);
+  padding: 40px 40px;
+  margin: 10px auto;
+  width:75%;
+  border-radius: 25px;
+  border: 2.5px groove green;
+}
+#Recipe-Cards-holder{
+  display: inline;
+  margin: 30px auto;
+
+}
+#Recipe-Cards {
+  background-image: url(../img/index-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(202, 132, 28, 0.825);
+  margin: 30px auto;
+  padding: 40px 40px;
+  width:75%;
+  border-radius: 25px;
+  border: 2.5px groove green;
+
+}
+.Recipe-Card {
+  align-content: space-evenly;
+}

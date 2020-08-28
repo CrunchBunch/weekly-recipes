@@ -1,37 +1,85 @@
-h1{
+h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 72px;
   text-align: center;
   margin: 20px auto;
 }
-
-h2, h3, h4, h5, h6, p{
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 26px;
+  font-family: 'Kaushan Script', cursive;
+}
+h4 {
+  font-size: 18px;
+  font-family: 'Kaushan Script', cursive;
+}
+p {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+ul {
+  list-style-type: square;
+  text-align: center;
+}
+li {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 1.25em;
+  margin-bottom: 1.5px;
+}
+h2, h5, h6, p {
   font-family: 'Spectral', serif;
 }
-
-html{
+html {
   width: auto;
 }
-
-body{
-  background-color: rgb(244, 232, 217);
+header {
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+header h1 {
+  border-bottom: 8px black ridge;
+}
+body {
+  background-color: rgb(202, 132, 28, 0.825);
   margin: 20px 100px;
 }
-
-/* section{
-  background-color: rgba(0, 0, 0, 0.18);
-} */
-
-form{
+form {
   margin: 10px;
 }
-#links, #links a{
+#links, #links a {
   text-decoration-line: none;
-  text-align: right;
+  text-align: center;
   color: rgb(227, 136, 87)
-
 }
-
-#links a:hover{
+#links li {
+  color: rgb(223, 138, 26);
+  background-color: rgba(23, 100, 32, 0.842);
+  border: black ridge;
+  border-radius: 25px;
+  padding: 8px;
+  width: fit-content;
+  display: inline-block;
+}
+#links a:hover {
   color: black;
+}
+footer {
+  text-align: right;
+  background-color: rgba(202, 132, 28, 0.612);
+  border: 5px rgb(148, 145, 51) ridge;
+  border-radius: 25px;
+  padding: 2px;
+  width: 220px;
+  margin: 0 auto;
+}
+#img1 {
+  width: 75px;
 }
