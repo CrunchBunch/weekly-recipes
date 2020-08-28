@@ -3,7 +3,7 @@
 var recipe;
 var form;
 function loadrecipe(){
-  var recipeItems = JSON.parse(localStorage.getItem('recipes'));
+  var recipeItems = JSON.parse(localStorage.getItem('allRecipes'));
   recipe = recipeItems;
 
   var formInfo = JSON.parse(localStorage.getItem('form'));
