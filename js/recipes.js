@@ -3,14 +3,14 @@ var allrecipes = [];
 // constructor of recipe
 var Product = function(dish, isMeat, servingSize, time, source, ingredients, directions) {
   this.dish = dish;
-  this.isMeat = isMeat
+  this.isMeat = isMeat;
   this.servingSize = servingSize;
   this.time = time;
   this.source = source;
   this.ingredients = ingredients;
   this.directions = directions;
 
-  allrecipes.push(this)
+  allrecipes.push(this);
 };
 //object instance of recipes
 Product.prototype.AllRecipes = function(recipes) {
@@ -20,22 +20,22 @@ Product.prototype.addInput = function(dish, servingSize, time, source, ingredien
 
   this.recipes.push(new FormInfo(servings,protein, name));
 
-}
+};
 function saveToLocalStorage() {
-  allrecipes = JSON.stringify(allrecipes)
+  allrecipes = JSON.stringify(allrecipes);
   localStorage.setItem('allRecipes', allrecipes);
 }
 function generateRecipes() {
-new Product(recipeCard1.dish, recipeCard1.isMeat, recipeCard1.servingSize, recipeCard1.time, recipeCard1.source, recipeCard1.ingredients, recipeCard1.directions);
-new Product(recipeCard2.dish, recipeCard2.isMeat,  recipeCard2.servingSize, recipeCard2.time, recipeCard3.source, recipeCard2.ingredients, recipeCard2.directions);
-new Product(recipeCard3.dish, recipeCard3.isMeat,  recipeCard3.servingSize, recipeCard3.time, recipeCard3.source, recipeCard3.ingredients, recipeCard3.directions);
-new Product(recipeCard4.dish, recipeCard4.isMeat,  recipeCard4.servingSize, recipeCard4.time, recipeCard4.source, recipeCard4.ingredients, recipeCard4.directions);
-new Product(recipeCard5.dish, recipeCard5.isMeat,  recipeCard5.servingSize, recipeCard5.time, recipeCard5.source, recipeCard5.ingredients, recipeCard5.directions);
-new Product(recipeCard6.dish, recipeCard6.isMeat,  recipeCard6.servingSize, recipeCard6.time, recipeCard6.source, recipeCard6.ingredients, recipeCard6.directions);
-new Product(recipeCard7.dish, recipeCard7.isMeat,  recipeCard7.servingSize, recipeCard7.time, recipeCard7.source, recipeCard7.ingredients, recipeCard7.directions);
-new Product(recipeCard8.dish, recipeCard8.isMeat,  recipeCard8.servingSize, recipeCard8.time, recipeCard8.source, recipeCard8.ingredients, recipeCard8.directions);
-new Product(recipeCard9.dish, recipeCard9.isMeat,  recipeCard9.servingSize, recipeCard9.time, recipeCard9.source, recipeCard9.ingredients, recipeCard9.directions);
-new Product(recipeCard10.dish, recipeCard10.isMeat,  recipeCard10.servingSize, recipeCard10.time, recipeCard10.source, recipeCard10.ingredients, recipeCard10.directions);
+  new Product(recipeCard1.dish, recipeCard1.isMeat, recipeCard1.servingSize, recipeCard1.time, recipeCard1.source, recipeCard1.ingredients, recipeCard1.directions);
+  new Product(recipeCard2.dish, recipeCard2.isMeat, recipeCard2.servingSize, recipeCard2.time, recipeCard3.source, recipeCard2.ingredients, recipeCard2.directions);
+  new Product(recipeCard3.dish, recipeCard3.isMeat, recipeCard3.servingSize, recipeCard3.time, recipeCard3.source, recipeCard3.ingredients, recipeCard3.directions);
+  new Product(recipeCard4.dish, recipeCard4.isMeat, recipeCard4.servingSize, recipeCard4.time, recipeCard4.source, recipeCard4.ingredients, recipeCard4.directions);
+  new Product(recipeCard5.dish, recipeCard5.isMeat, recipeCard5.servingSize, recipeCard5.time, recipeCard5.source, recipeCard5.ingredients, recipeCard5.directions);
+  new Product(recipeCard6.dish, recipeCard6.isMeat, recipeCard6.servingSize, recipeCard6.time, recipeCard6.source, recipeCard6.ingredients, recipeCard6.directions);
+  new Product(recipeCard7.dish, recipeCard7.isMeat, recipeCard7.servingSize, recipeCard7.time, recipeCard7.source, recipeCard7.ingredients, recipeCard7.directions);
+  new Product(recipeCard8.dish, recipeCard8.isMeat, recipeCard8.servingSize, recipeCard8.time, recipeCard8.source, recipeCard8.ingredients, recipeCard8.directions);
+  new Product(recipeCard9.dish, recipeCard9.isMeat, recipeCard9.servingSize, recipeCard9.time, recipeCard9.source, recipeCard9.ingredients, recipeCard9.directions);
+  new Product(recipeCard10.dish, recipeCard10.isMeat, recipeCard10.servingSize, recipeCard10.time, recipeCard10.source, recipeCard10.ingredients, recipeCard10.directions);
 }
 var recipeCard1 = {
   dish:"Shepards Pie",
@@ -45,7 +45,7 @@ var recipeCard1 = {
   source:"Matt Ravenmoore with credit to Gorden Ramsey for a base",
   ingredients:['1lb ground beef or lamb','1 medium yellow onion','1 carrot','2 cloves of garlic minced','1 cup red wine','2 Tbsp of butter','1 Tbsp of olive oil','2 Tbsp of tomato paste','4 potatoes pealed and cubed','4 cups of beef stock','basil','oregano','thyme','salt and pepper','1/8 cup cream','1/4 cup parmesan'],
   directions:['0. Preheat the oven to 400deg.','1. Bring a medium to large pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes. Drain and mash. Mix in butter, cream, and parmesan and set aside to cool.',' 2. Heat a skillet with the olive oil, over medium high heat. Sear off your meat "no color no flavor", once it has some color drain it off and shred your onion into your pan.','3. Shred the carrot into the pan and stir, cook until the vegetables are soft and starting to take color(about 4 min).','4. Add in the tomato paste and minced garlic stir a bit while adding the wine. cook off the wine for about 3 to 5 min.','5. slowly stir in the beef stock and bring to a high simmer and let simmer without a lid for 8 min or until thick.','6. Once thickened gently spoon the mashed potatoes on top (use a rubber spatula to spread if needed) then fluff with a fork and sprinkle any extra parmesan on top and bake for 15 min.','7. cool for 15 min and serve.']
-}
+};
 var recipeCard2 = {
   dish:"Chicken Parmesan",
   isMeat : true,
